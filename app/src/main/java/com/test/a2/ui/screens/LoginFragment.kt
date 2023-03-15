@@ -89,4 +89,4 @@ class LoginFragment : Fragment() {
     }
 }
 
-private const val MILLISECONDS = 86L
+private const val MILLISECONDS = 86_400_400L
