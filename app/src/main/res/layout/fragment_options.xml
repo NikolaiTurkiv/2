@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.OptionsFragment">
+
+    <ImageView
+        android:id="@+id/im_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/seven"
+        tools:ignore="ContentDescription"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/tv_options_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_extrabolditalic"
+        android:text="@string/options"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_logo" />
+
+    <ImageView
+        android:id="@+id/im_logo"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_extrabolditalic"
+         android:textColor="@color/app_orange"
+        android:textSize="30sp"
+        android:text="@string/notification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_options_title" />
+
+    <TextView
+        android:id="@+id/tv_remove_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/remove_data"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_extrabolditalic"
+        android:textColor="@color/app_orange"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_notification"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notification" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:thumb="@drawable/switch_thumb"
+        app:track="@drawable/switch_track"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_notification" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

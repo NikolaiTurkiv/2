@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_training">НАЧАЛО\nТРЕНИРОВКИ</string>
+    <string name="name">ИМЯ</string>
+    <string name="height">РОСТ</string>
+    <string name="weight">ВЕС</string>
+    <string name="begin">НАЧАТЬ</string>
+    <string name="training">ТРЕНИРОВКА</string>
+    <string name="analytics">АНАЛИТИКА</string>
+    <string name="statistic">НАСТРОЙКИ</string>
+    <string name="goal_of_day">ЦЕЛЬ НА ДЕНЬ:</string>
+    <string name="add_data">ВНЕСИТЕ ДАННЫЕ</string>
+    <string name="distance">РАССТОЯНИЕ (КМ)</string>
+    <string name="sit_ups">ПРИСЕДАНИЯ (РАЗ)</string>
+    <string name="put">ВНЕСТИ</string>
+    <string name="progress">ПРОГРЕСС</string>
+    <string name="progress_">ПРОГРЕСС: </string>
+    <string name="options">НАСТРОЙКИ</string>
+    <string name="notification">УВЕДОМЛЕНИЯ</string>
+    <string name="remove_data">ОЧИСТИТЬ\nДАННЫЕ</string>
+    <string name="ask_coach">ВОПРОС\nТРЕНЕРУ</string>
+    <string name="question_hitory">ИСТОРИЯ ОТВЕТОВ</string>
+    <string name="answer">ОТВЕТ: </string>
+    <string name="points">POINTS</string>
+    <string name="_25000">25000</string>
+    <string name="p">P</string>
+    <string name="_0">0</string>
+
+    <string name="monday">monday</string>
+    <string name="tuesday">tuesday</string>
+    <string name="wednesday">wednesday</string>
+    <string name="thursday">thursday</string>
+    <string name="friday">friday</string>
+    <string name="saturday">saturday</string>
+    <string name="sunday">sunday</string>
+    <string name="field_cannot_be_empty">Поля не могут быть пустыми</string>
+
+</resources>

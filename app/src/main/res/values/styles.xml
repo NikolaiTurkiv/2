@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="edit_text_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">30dp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+     </style>
+
+    <style name="botton_main_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginEnd">50dp</item>
+        <item name="android:background">@drawable/blue_background</item>
+        <item name="android:fontFamily">@font/montserrat_bolditalic</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+</resources>

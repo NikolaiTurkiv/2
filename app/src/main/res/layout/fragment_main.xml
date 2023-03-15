@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.MainFragment">
+
+
+    <ImageView
+        android:id="@+id/im_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/third"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/im_logo"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_train"
+        style="@style/botton_main_style"
+        android:text="@string/training"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_logo" />
+
+    <TextView
+        android:id="@+id/tv_analytics"
+        style="@style/botton_main_style"
+        android:text="@string/analytics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_train" />
+
+    <TextView
+        android:id="@+id/tv_statistic"
+        style="@style/botton_main_style"
+        android:text="@string/statistic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_analytics" />
+
+    <TextView
+        android:id="@+id/tv_goal_of_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bolditalic"
+        android:text="@string/goal_of_day"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+         android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_statistic"
+        app:layout_constraintStart_toStartOf="@+id/tv_statistic"
+        app:layout_constraintTop_toBottomOf="@+id/tv_statistic" />
+
+    <TextView
+        android:id="@+id/tv_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bolditalic"
+        android:text="@string/points"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_goal_of_day"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goal_of_day" />
+
+    <ProgressBar
+        android:id="@+id/pb_main"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:max="25000"
+        android:progressDrawable="@drawable/gradient_progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/goal_day_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bolditalic"
+        android:text="@string/_25000"
+        android:gravity="center"
+        android:textColor="@color/app_orange"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_points"
+        app:layout_constraintStart_toStartOf="@+id/tv_goal_of_day"
+        app:layout_constraintTop_toTopOf="@+id/tv_points" />
+
+    <TextView
+        android:id="@+id/progress_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/progress_"
+        android:fontFamily="@font/montserrat_bolditalic"
+         android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/pb_main"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_progress_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="25000"
+        android:text="@string/_0"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/montserrat_bolditalic"
+        android:textColor="@color/app_orange"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_title"
+        app:layout_constraintStart_toEndOf="@+id/progress_title"
+        app:layout_constraintTop_toTopOf="@+id/progress_title" />
+
+    <TextView
+        android:id="@+id/tv_point_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/p"
+        android:fontFamily="@font/montserrat_bolditalic"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_progress_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_progress_count"
+        app:layout_constraintTop_toTopOf="@+id/tv_progress_count" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
