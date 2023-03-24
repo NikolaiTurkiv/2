@@ -13,6 +13,7 @@ class PreferencesRepositoryImpl @Inject constructor(
         private const val DAGGER_SHARED_PREF = "DAGGER_SHARED_PREF"
         private const val NAME = "NAME"
         private const val PROGRESS = "PROGRESS"
+        private const val ID = "ID"
     }
 
 
@@ -31,5 +32,12 @@ class PreferencesRepositoryImpl @Inject constructor(
 
     override fun saveActualProgress(value: Int) {
         sharedPreferences.edit().putInt(PROGRESS,value).apply()
+    }
+
+    override val id: String
+        get() = sharedPreferences.getString(ID,"") ?: ""
+
+    override fun saveId(id: String) {
+        sharedPreferences.edit().putString(ID,id).apply()
     }
 }

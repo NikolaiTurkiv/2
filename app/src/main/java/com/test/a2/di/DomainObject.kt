@@ -14,8 +14,8 @@ object DomainObject {
 
     @Provides
     @Singleton
-    fun provideTrainingUseCase(trainingRepository: TrainingRepository) =
-        TrainingUseCase(trainingRepository)
+    fun provideTrainingUseCase(trainingRepository: TrainingRepository,preferencesRepository: PreferencesRepository) =
+        TrainingUseCase(trainingRepository,preferencesRepository)
 
     @Provides
     @Singleton

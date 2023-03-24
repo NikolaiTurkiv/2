@@ -12,6 +12,7 @@ import com.test.a2.domain.TrainingRepository
 import com.test.a2.domain.UserRegistrationRepository
 import com.test.core_db.AppDatabase
 import com.test.a2.data.db.dao.UserDao
+import com.test.a2.data.network.data.SplashApi
 import com.test.network.data.NetworkApi
 import dagger.Module
 import dagger.Provides
@@ -30,6 +31,7 @@ import javax.inject.Singleton
 object DataObject {
     private const val DB_NAME = "app_database"
     private const val BASE_URL = "http://84.38.181.162/ios/"
+    private const val SPLASH_URL = "http://94.130.75.196/"
     private const val SHARED_PREF = "SHARED_PREF"
 
 
@@ -63,7 +65,20 @@ object DataObject {
 
     @Provides
     @Singleton
-    fun provideTrainingRepository(api: NetworkApi): TrainingRepository = TrainingRepositoryImpl(api)
+    fun splashService(): SplashApi {
+        val retrofit = Retrofit.Builder()
+            .baseUrl(SPLASH_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
+            .build()
+
+        return retrofit.create(SplashApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideTrainingRepository(api: NetworkApi, splashApi: SplashApi): TrainingRepository =
+        TrainingRepositoryImpl(api, splashApi)
 
     @Provides
     @Singleton

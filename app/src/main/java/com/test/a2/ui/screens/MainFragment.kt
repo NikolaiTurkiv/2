@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.onesignal.OneSignal
 import com.test.a2.R
 import com.test.a2.data.db.entities.UserEntity
 import com.test.a2.databinding.FragmentMainBinding
